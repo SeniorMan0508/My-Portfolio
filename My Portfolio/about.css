@@ -1,0 +1,314 @@
+  *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-image: url(./portfolio\ bg.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            color: white;
+        }
+
+        /* NAV */
+        nav ul {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            padding: 10px;
+            margin-top: 20px;
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: blue;
+            border-bottom: 2px solid blue;
+            padding-bottom: 10px;
+        }
+
+        nav ul li a.active {
+            color: blue;
+            border-bottom: 2px solid blue;
+            padding-bottom: 4px;
+        }
+
+        /* PAGE TITLE */
+        .page-title {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 48px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .page-title span {
+            color: blue;
+        }
+
+        .title-line {
+            width: 80px;
+            height: 4px;
+            background-color: blue;
+            margin: 12px auto 0;
+            border-radius: 2px;
+        }
+
+        /* ABOUT INTRO */
+        .about-intro {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+            padding: 60px 10%;
+        }
+
+        .about-photo img {
+            width: 280px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid blue;
+            box-shadow: 0 0 30px rgba(0, 0, 255, 0.4);
+        }
+
+        .about-text {
+            max-width: 550px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .about-text h2 {
+            font-size: 32px;
+            color: blue;
+        }
+
+        .about-text p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #ccc;
+        }
+
+        /* SKILLS */
+        .skills-section {
+            padding: 40px 10%;
+            text-align: center;
+        }
+
+        .skills-section h2 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .skills-section h2 span {
+            color: blue;
+        }
+
+        .skills-line {
+            width: 60px;
+            height: 3px;
+            background: blue;
+            margin: 0 auto 40px;
+            border-radius: 2px;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(0, 0, 255, 0.4);
+            border-radius: 12px;
+            padding: 20px 30px;
+            min-width: 130px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: scale(1.08) translateX(-5px);
+            border-color: blue;
+            box-shadow: 0 8px 20px rgba(0, 0, 255, 0.3);
+        }
+
+        .skill-card i {
+            font-size: 30px;
+            color: blue;
+        }
+
+        .skill-card span {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .skill-bar-wrap {
+            width: 100%;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            height: 6px;
+            overflow: hidden;
+        }
+
+        .skill-bar {
+            height: 100%;
+            background: blue;
+            border-radius: 10px;
+        }
+
+        /* STORY */
+        .story-section {
+            padding: 40px 10%;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .story-section h2 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .story-section h2 span {
+            color: blue;
+        }
+
+        .story-line {
+            width: 60px;
+            height: 3px;
+            background: blue;
+            margin: 0 auto 30px;
+            border-radius: 2px;
+        }
+
+        .story-section p {
+            font-size: 16px;
+            line-height: 1.9;
+            color: #ccc;
+            margin-bottom: 16px;
+        }
+
+        /* HOBBIES */
+        .hobbies-section {
+            padding: 40px 10%;
+            text-align: center;
+        }
+
+        .hobbies-section h2 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .hobbies-section h2 span {
+            color: blue;
+        }
+
+        .hobbies-line {
+            width: 60px;
+            height: 3px;
+            background: blue;
+            margin: 0 auto 40px;
+            border-radius: 2px;
+        }
+
+        .hobbies-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+        }
+
+        .hobby-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 30px 20px;
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .hobby-card:hover {
+            transform: translateY(-8px);
+            border-color: blue;
+            box-shadow: 0 8px 20px rgba(0,0,255,0.3);
+        }
+
+        .hobby-card i {
+            font-size: 36px;
+            color: blue;
+        }
+
+        .hobby-card span {
+            font-size: 13px;
+        }
+
+        /* FOOTER */
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            background-color: black;
+            padding: 20px;
+            font-size: 20px;
+            margin-top: 60px;
+        }
+
+        .ft {
+            display: flex;
+            flex-direction: row;
+            gap: 50%;
+            font-size: 40px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .about-intro {
+                flex-direction: column;
+                padding: 40px 5%;
+                text-align: center;
+            }
+
+            .about-photo img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .page-title {
+                font-size: 32px;
+            }
+
+            .ft {
+                gap: 20%;
+                font-size: 30px;
+            }
+
+            footer {
+                font-size: 14px;
+            }
+        }
