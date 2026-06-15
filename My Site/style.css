@@ -213,6 +213,10 @@ footer{
 
 /* Mobile */
 @media (max-width: 768px) {
+    body {
+                background-attachment: scroll;
+    }
+    
     nav ul {
         flex-direction: row;
         gap: 10px;

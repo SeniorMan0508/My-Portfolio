@@ -292,6 +292,10 @@
 
         /* RESPONSIVE */
         @media (max-width: 768px) {
+            body {
+                background-attachment: scroll;
+            }
+            
             .about-intro {
                 flex-direction: column;
                 padding: 40px 5%;
