@@ -286,6 +286,10 @@
             font-size: 40px;
         }
 
+        .ft a{
+            color: white;
+        }
+
         /* RESPONSIVE */
         @media (max-width: 768px) {
             .about-intro {

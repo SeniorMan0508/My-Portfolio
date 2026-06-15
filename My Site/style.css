@@ -169,6 +169,10 @@ footer{
     font-size: 40px;
 }
 
+.ft a{
+    color: white;
+}
+
 /* Tablet */
 @media (max-width: 1024px) {
     .sec {
