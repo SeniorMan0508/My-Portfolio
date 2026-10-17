@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Badmus Ayomide | Frontend Web Developer & Digital Craftsman</title>
+  <meta name="description" content="Badmus Ayomide - Frontend Web Developer based in Nigeria. Specializing in modern, responsive, and high-performance websites and web applications.">
+  <meta name="keywords" content="Badmus Ayomide, Web Developer, Frontend Developer, Nigeria Developer, HTML, CSS, JavaScript, Portfolio">
+  <meta name="author" content="Badmus Ayomide">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Badmus Ayomide | Frontend Web Developer">
+  <meta property="og:description" content="I build modern, responsive, and high-performance websites that elevate digital experiences.">
+  <meta property="og:image" content="./assets/Senior_Man.png">
+
+  <!-- Font Awesome & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- STICKY GLASS HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-code">&lt;</span>Ayomide<span class="logo-dot">.dev</span><span class="logo-code">/&gt;</span>
+        <span class="logo-badge">Senior Man</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- CTA Action -->
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">
+          Let's Talk <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <nav class="mobile-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://wa.me/2347049045720" target="_blank" class="btn btn-whatsapp" style="margin-top: 1rem;">
+        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Left Content -->
+          <div class="hero-content">
+            <div class="status-badge">
+              <span class="status-dot"></span>
+              Available for freelance & full-time roles
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm <span class="gradient-text">Badmus Ayomide</span>
+            </h1>
+
+            <div class="hero-subtitle">
+              <span>I am a </span>
+              <span id="typewriter" class="gradient-text" style="font-weight: 800;"></span>
+              <span class="typewriter-cursor"></span>
+            </div>
+
+            <p class="hero-description">
+              I build modern, responsive, and user-friendly websites that help businesses grow, attract more customers, and deliver unforgettable digital experiences.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                View My Work <i class="fa-solid fa-laptop-code"></i>
+              </a>
+              <a href="https://wa.me/2347049045720?text=Hi%20Ayomide,%20I'm%20interested%20in%20working%20with%20you!" target="_blank" class="btn btn-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+              </a>
+              <a href="contact.html" class="btn btn-secondary">
+                Contact Me <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="hero-stats">
+              <div class="stat-item">
+                <h3>15+</h3>
+                <p>Projects Built</p>
+              </div>
+              <div class="stat-item">
+                <h3>100%</h3>
+                <p>Client Dedication</p>
+              </div>
+              <div class="stat-item">
+                <h3>2+</h3>
+                <p>Years Experience</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Visual / Avatar Card -->
+          <div class="hero-visual">
+            <div class="image-frame">
+              <img src="./assets/Senior_Man.png" alt="Badmus Ayomide" class="profile-avatar">
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-badge badge-top-left">
+              <i class="fa-solid fa-bolt"></i>
+              <div>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">Performance</div>
+                <div>Fast & Responsive</div>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-right">
+              <i class="fa-solid fa-code"></i>
+              <div>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">Standards</div>
+                <div>Clean Code</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK TICKER -->
+    <section class="tech-strip">
+      <div class="container">
+        <div class="tech-grid">
+          <div class="tech-item"><i class="fa-brands fa-html5"></i> HTML5 Semantic</div>
+          <div class="tech-item"><i class="fa-brands fa-css3-alt"></i> Modern CSS3</div>
+          <div class="tech-item"><i class="fa-brands fa-js"></i> JavaScript ES6+</div>
+          <div class="tech-item"><i class="fa-brands fa-git-alt"></i> Git Version Control</div>
+          <div class="tech-item"><i class="fa-brands fa-wordpress"></i> WordPress &amp; WooCommerce</div>
+          <div class="tech-item"><i class="fa-solid fa-mobile-screen"></i> Responsive UI</div>
+          <div class="tech-item"><i class="fa-solid fa-gauge-high"></i> Performance & SEO</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SHOWCASE -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio Showcase</span>
+          <h2 class="section-title">Featured <span>Projects</span></h2>
+          <p class="section-desc">
+            A selection of recent web development projects crafted with focus on aesthetics, responsiveness, and clean architecture.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: OPA5 Autos Car Dealership -->
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <img src="./assets/opa5autos_mockup.jpg" alt="OPA5 Autos Car Dealership Platform">
+              <span class="project-badge">Live Client Website</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">OPA5 Autos - Dealership &amp; Inventory</h3>
+              <p class="project-desc">
+                A modern automotive dealership platform for quality pre-owned vehicles. Enables customers to explore inventory, calculate financing, and seamlessly navigate to the dealer portal for vehicle purchase finalization and secure payment.
+              </p>
+              <div class="project-tags">
+                <span>HTML5 / CSS3</span>
+                <span>JavaScript</span>
+                <span>Automotive UI</span>
+                <span>Inventory System</span>
+              </div>
+              <div class="project-links">
+                <a href="https://opa5autos.com/" target="_blank" class="btn btn-primary btn-sm">
+                  Visit Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="contact.html" class="btn btn-outline btn-sm">
+                  Inquire Similar
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Apex Bank Web App -->
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <img src="./assets/bank_mockup.jpg" alt="Apex Digital Bank Web Application">
+              <span class="project-badge">Fintech Web App</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Apex Digital Bank Platform</h3>
+              <p class="project-desc">
+                A modern digital banking interface equipped with interactive card management, real-time transaction tracking, deposit/transfer simulation, and sleek dark mode aesthetics.
+              </p>
+              <div class="project-tags">
+                <span>JavaScript</span>
+                <span>Vanilla CSS</span>
+                <span>Responsive</span>
+                <span>Fintech UI</span>
+              </div>
+              <div class="project-links">
+                <a href="contact.html" class="btn btn-primary btn-sm">
+                  Request Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Reedah Tags E-Commerce Platform -->
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <img src="./assets/reedahtags_mockup.jpg" alt="Reedah Tags E-Commerce Storefront">
+              <span class="project-badge">Live E-Commerce Store</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Reedah Tags - Apparel &amp; Footwear Store</h3>
+              <p class="project-desc">
+                A full-featured fashion e-commerce storefront for original crocs, slides, and sports jerseys. Includes dynamic shopping cart management, product catalog filtering, mobile optimization, and streamlined checkout.
+              </p>
+              <div class="project-tags">
+                <span>WordPress</span>
+                <span>WooCommerce</span>
+                <span>E-Commerce</span>
+                <span>Shopping Cart</span>
+              </div>
+              <div class="project-links">
+                <a href="https://reedahtags.com.ng/" target="_blank" class="btn btn-primary btn-sm">
+                  Visit Live Store <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="contact.html" class="btn btn-outline btn-sm">
+                  Inquire Store
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Bank Shot It Photography Portfolio -->
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <img src="./assets/bankshotit_mockup.jpg" alt="Bank Shot It Photography Portfolio">
+              <span class="project-badge">Live Photography Site</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Bank Shot It - Creative Photography</h3>
+              <p class="project-desc">
+                A visual-first photography portfolio and session booking website crafted for an Ogun State professional photographer. Features landscape galleries, emotive portrait storytelling, and an integrated client inquiry channel.
+              </p>
+              <div class="project-tags">
+                <span>HTML5 / CSS3</span>
+                <span>Responsive Design</span>
+                <span>Visual Arts UI</span>
+                <span>Netlify Deploy</span>
+              </div>
+              <div class="project-links">
+                <a href="https://shot-by-banky-creative-concepts.netlify.app/" target="_blank" class="btn btn-primary btn-sm">
+                  Visit Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="contact.html" class="btn btn-outline btn-sm">
+                  Inquire Similar
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE PILLARS / WHY WORK WITH ME -->
+    <section class="features-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Quality Standards</span>
+          <h2 class="section-title">Why Work <span>With Me</span></h2>
+          <p class="section-desc">
+            I don't just write code; I craft digital products that make your brand stand out and perform at the highest level.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-wrap">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3>Clean Architecture</h3>
+            <p>Maintainable, modular, and standards-compliant code that is easy to scale, update, and integrate as your business grows.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrap">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <h3>100% Responsive</h3>
+            <p>Websites engineered from the ground up to render flawlessly on smartphones, tablets, laptops, and ultra-wide screens.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrap">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <h3>Blazing Performance</h3>
+            <p>Optimized image loading, lightweight code, and fast rendering speeds to keep bounce rates low and visitors engaged.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrap">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+            <h3>Direct Communication</h3>
+            <p>Reliable updates, prompt turnaround, and clear transparency every single step of the way from wireframe to launch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <div class="container">
+      <section class="cta-banner">
+        <h2>Have a project in mind? Let's build something <span class="gradient-text">exceptional</span>.</h2>
+        <p>
+          Whether you need a brand-new website, a portfolio, an e-commerce platform, or a modern redesign, I'm ready to bring your vision to life.
+        </p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary">
+            Start a Conversation <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="https://wa.me/2347049045720" target="_blank" class="btn btn-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> Chat Now
+          </a>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- UNIFIED FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+
+        <!-- Col 1: Brand Info -->
+        <div class="footer-col footer-col-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-code">&lt;</span>Ayomide<span class="logo-dot">.dev</span><span class="logo-code">/&gt;</span>
+          </a>
+          <p>
+            Passionate Frontend Web Developer crafting modern, high-performance websites and digital solutions for ambitious brands and individuals.
+          </p>
+          <div class="status-badge" style="display: inline-flex;">
+            <span class="status-dot"></span> Available for Hire
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="services.html">Services & Pricing</a></li>
+            <li><a href="#projects">Featured Work</a></li>
+            <li><a href="contact.html">Get in Touch</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div class="footer-col">
+          <h4>What I Do</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Custom Web Design</a></li>
+            <li><a href="services.html">Frontend Development</a></li>
+            <li><a href="services.html">Responsive Redesign</a></li>
+            <li><a href="services.html">SEO & Performance</a></li>
+            <li><a href="services.html">Maintenance & Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Socials -->
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:badmusdaniel0508@gmail.com">badmusdaniel0508@gmail.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+2347049045720">+234 704 904 5720</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Lagos, Nigeria (Remote Available)</span>
+            </li>
+          </ul>
+          <div class="socials-row" style="margin-top: 1.2rem;">
+            <a href="https://github.com/SeniorMan0508" target="_blank" class="social-circle-link" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.tiktok.com/@senior_man98?_r=1&_t=ZS-97DROAPI23I" target="_blank" class="social-circle-link" aria-label="TikTok">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://wa.me/2347049045720" target="_blank" class="social-circle-link" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Badmus Ayomide. Built with passion &amp; modern code. All rights reserved.
+        </div>
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
